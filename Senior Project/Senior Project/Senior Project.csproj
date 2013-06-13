@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FD6D5846-AC65-4542-B85A-D384EF43F516}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Senior_Project</RootNamespace>
+    <AssemblyName>Senior Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buisness\Payment.cs" />
+    <Compile Include="Presentation\CustomerPurchaseList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\CustomerPurchaseList.Designer.cs">
+      <DependentUpon>CustomerPurchaseList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\PaymentDA.cs" />
+    <Compile Include="Presentation\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\AddToPurch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\AddToPurch.Designer.cs">
+      <DependentUpon>AddToPurch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buisness\Customer.cs" />
+    <Compile Include="Buisness\Credintials.cs" />
+    <Compile Include="Buisness\CBike.cs" />
+    <Compile Include="Buisness\TicketService.cs" />
+    <Compile Include="Data Access\CBikeDA.cs" />
+    <Compile Include="Data Access\CustomerDA.cs" />
+    <Compile Include="Buisness\NewBike.cs" />
+    <Compile Include="Presentation\ManageNewBikes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ManageNewBikes.Designer.cs">
+      <DependentUpon>ManageNewBikes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\NewBikeDA.cs" />
+    <Compile Include="Presentation\ManageProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ManageProducts.Designer.cs">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\NewCustomerBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\NewCustomerBike.Designer.cs">
+      <DependentUpon>NewCustomerBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\CreateCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\CreateCustomer.Designer.cs">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\AddServiceWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\AddServiceWindow.Designer.cs">
+      <DependentUpon>AddServiceWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ServiceTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ServiceTicket.Designer.cs">
+      <DependentUpon>ServiceTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ClockInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ClockInOut.Designer.cs">
+      <DependentUpon>ClockInOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Connection\Connection.cs" />
+    <Compile Include="Buisness\Employee.cs" />
+    <Compile Include="Data Access\EmployeeDA.cs" />
+    <Compile Include="Presentation\EmployeeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\EmployeeAdmin.Designer.cs">
+      <DependentUpon>EmployeeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buisness\Product.cs" />
+    <Compile Include="Data Access\ProductDA.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presentation\Services.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Services.Designer.cs">
+      <DependentUpon>Services.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ServiceInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ServiceInfo.Designer.cs">
+      <DependentUpon>ServiceInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\SelectBike.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\SelectBike.Designer.cs">
+      <DependentUpon>SelectBike.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buisness\Service.cs" />
+    <Compile Include="Data Access\ServiceDA.cs" />
+    <Compile Include="Presentation\UpEmpPasscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\UpEmpPasscs.Designer.cs">
+      <DependentUpon>UpEmpPasscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data Access\TicketServiceDA.cs" />
+    <Compile Include="Buisness\PurchaseItemLine.cs" />
+    <Compile Include="Buisness\Purchase.cs" />
+    <Compile Include="Data Access\PurchaseDA.cs" />
+    <Compile Include="Data Access\PurchaseLineDa.cs" />
+    <Compile Include="Presentation\Re-OrderReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Re-OrderReport.Designer.cs">
+      <DependentUpon>Re-OrderReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Buisness\ReOrderItem.cs" />
+    <Compile Include="Presentation\PurchaseDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PurchaseDetails.Designer.cs">
+      <DependentUpon>PurchaseDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Validation.cs" />
+    <EmbeddedResource Include="Presentation\CustomerPurchaseList.resx">
+      <DependentUpon>CustomerPurchaseList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\AddToPurch.resx">
+      <DependentUpon>AddToPurch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ManageNewBikes.resx">
+      <DependentUpon>ManageNewBikes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ManageProducts.resx">
+      <DependentUpon>ManageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\NewCustomerBike.resx">
+      <DependentUpon>NewCustomerBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\CreateCustomer.resx">
+      <DependentUpon>CreateCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\AddServiceWindow.resx">
+      <DependentUpon>AddServiceWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ServiceTicket.resx">
+      <DependentUpon>ServiceTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ClockInOut.resx">
+      <DependentUpon>ClockInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\EmployeeAdmin.resx">
+      <DependentUpon>EmployeeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Presentation\Services.resx">
+      <DependentUpon>Services.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ServiceInfo.resx">
+      <DependentUpon>ServiceInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\SelectBike.resx">
+      <DependentUpon>SelectBike.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UpEmpPasscs.resx">
+      <DependentUpon>UpEmpPasscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Re-OrderReport.resx">
+      <DependentUpon>Re-OrderReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PurchaseDetails.resx">
+      <DependentUpon>PurchaseDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
